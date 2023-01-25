@@ -67,7 +67,7 @@ console.log(navigator.userAgent)
 
 if(navigator.userAgent.match(/Mobile|Android/i)) {
     // change keyName and keyCode elements to input elements
-   alert('Please open this page in your computer! Currently it is not supported in mobile devices.')
+   alert('Please open this page in your computer! Currently it is not supported on mobile devices.')
 }
 
 
