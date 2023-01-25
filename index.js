@@ -65,38 +65,5 @@ bodyelement.addEventListener('keydown', e => {
 console.log(navigator.userAgent)
 })
 
-if(navigator.userAgent.match(/Mobile|Android/i)) {
-    // change keyName and keyCode elements to input elements
-    var keyNameInput = document.createElement('input');
-    var keyCodeInput = document.createElement('input');
-    keyNameInput.setAttribute('type', 'text');
-    keyCodeInput.setAttribute('type', 'text');
-    keyNameInput.style.backgroundColor = '#fe6f27';
-    keyNameInput.style.height = '20vh';
-    keyNameInput.style.width = '50vw';
-    keyNameInput.style.padding = '2rem';
-    keyNameInput.style.borderRadius = '10px';
-    keyNameInput.style.display = 'flex';
-    keyNameInput.style.alignItems = 'center';
-    keyNameInput.style.justifyContent = 'center';
-    keyNameInput.style.fontSize = '3rem';
-    keyNameInput.style.textAlign = 'center';
-    keyNameInput.style.margin = ' 1rem 0';
-    keyNameInput.style.color = ' white';
-    keyCodeInput.style.backgroundColor = 'white';
-    keyCodeInput.style.height = '20vh';
-    keyCodeInput.style.width = '50vw';
-    keyCodeInput.style.padding = '2rem';
-    keyCodeInput.style.borderRadius = '10px';
-    keyCodeInput.style.display = 'flex';
-    keyCodeInput.style.alignItems = 'center';
-    keyCodeInput.style.justifyContent = 'center';
-    keyCodeInput.style.fontSize = '3rem';
-    keyCodeInput.style.textAlign = 'center';
-
-    // replace keyName and keyCode elements with input elements
-    containerDiv[0].replaceChild(keyNameInput, keyName);
-    containerDiv[0].replaceChild(keyCodeInput, keyCode);
-}
 
 
