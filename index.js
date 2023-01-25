@@ -65,5 +65,9 @@ bodyelement.addEventListener('keydown', e => {
 console.log(navigator.userAgent)
 })
 
+if(navigator.userAgent.match(/Mobile|Android/i)) {
+    // change keyName and keyCode elements to input elements
+   alert('Pleae open this page in your computer!')
+}
 
 
